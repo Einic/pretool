@@ -1,7 +1,9 @@
 # pretool
+
 pretool is a versatile command-line tool designed to monitor services on amd64 and arm64 architectures in two network modes: host and bridge.
 
 ## Installation
+
 To use pretool, download the appropriate binary for your architecture:
 
 - pretool_amd64
@@ -9,6 +11,7 @@ To use pretool, download the appropriate binary for your architecture:
 
 ## Usage
 ### Monitoring Non-System Processes
+
 To retrieve information about non-system processes (PID greater than 1024 and without square brackets in their name), use the -c flag:
 
 ```
@@ -16,6 +19,7 @@ To retrieve information about non-system processes (PID greater than 1024 and wi
 ```
 
 ### Specify Target Type and Port
+
 To monitor services in a specific network mode (host or bridge) and customize the port number:
 
 #### Enable SSL/TLS for the server 
@@ -25,6 +29,7 @@ To monitor services in a specific network mode (host or bridge) and customize th
 ```
 
 #### For amd64 architecture:
+
 Specify host mode with the default port 8000:
 
 ```
@@ -38,6 +43,7 @@ Or, specify a custom port number (e.g., 9000):
 ```
 
 #### For arm64 architecture:
+
 Specify bridge mode with the default port 8000:
 
 ```
@@ -51,17 +57,24 @@ Or, specify a custom port number (e.g., 9000):
 ```
 
 ## Options
+
+```
 -c, --check  Get information on non-system processes.
 -t, --type   Specify the network mode (host or bridge).
 -p, --port   Specify the port number (default is 8000).
 -s, --ssl    Enable SSL/TLS for the server.
 -d, --domain Specify domain for tcpdump filter.
+```
 
 ## Other Options
+
+```
 -v, --version  Print the version number and MD5 hash of the tool.
 -h, --help     Show the help message and usage information.
+```
 
 ## Auxiliary commands
+
 ```
 ip link delete veth-host;
 ip link set br0 down;
