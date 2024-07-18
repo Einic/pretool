@@ -22,7 +22,9 @@ To retrieve information about non-system processes (PID greater than 1024 and wi
 
 To monitor services in a specific network mode (host or bridge) and customize the port number:
 
-#### Enable SSL/TLS for the server 
+#### SSL/TLS
+
+SSL/TLS can be enabled for the server only in host network mode. The certificate files must have .crt and .key extensions (e.g., domain.crt and domain.key).
 
 ```
 ./pretool_amd64 -t host -p 443 -s
