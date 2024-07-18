@@ -1,6 +1,6 @@
 # pretool
 
-pretool is a versatile command-line tool designed to monitor services on amd64 and arm64 architectures in two network modes: host and bridge.
+Supports service dial test in both host and bridge network modes, and includes an automatic network capture utility specifically designed for DNS traffic.
 
 ## Installation
 
