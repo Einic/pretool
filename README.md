@@ -58,7 +58,7 @@ Or, specify a custom port number (e.g., 9000):
 ./pretool_arm64 -t bridge -p 9000
 ```
 
-#### Specify dns to capture packets
+### Specify dns to capture packets
 
 To capture DNS packets, specify the domain name:
 
@@ -66,7 +66,7 @@ To capture DNS packets, specify the domain name:
 ./pretool_arm64 -d www.infvie.com
 ```
 
-#### Nmap written entirely in go
+### Nmap written entirely in go
 
 pretool extends nmap to implement an efficient port scanner, supporting the following scanning methods: UDP, TCP full connection, ICMP, FIN, ACK, SYN half-open, NULL, IP protocol layer, and feature-based scanning.
 
