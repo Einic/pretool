@@ -123,3 +123,4 @@ ip netns exec container ss -tuln;
 ![Image text](https://mirrors.infvie.org/image/pretool/20240717213356.png)
 ![Image text](https://mirrors.infvie.org/image/pretool/20240717213735.png)
 ![Image text](https://mirrors.infvie.org/image/pretool/20240717214128.png)
+![Image text](https://mirrors.infvie.org/image/pretool/20240720191150.png)
