@@ -1,6 +1,6 @@
 # pretool
 
-Supports service dial test in both host and bridge network modes, and includes an automatic network capture utility specifically designed for DNS traffic.
+Supports service probe in both host and bridge network modes, and includes an automatic network capture utility specifically designed for DNS traffic.
 
 ## Installation
 
@@ -58,6 +58,23 @@ Or, specify a custom port number (e.g., 9000):
 ./pretool_arm64 -t bridge -p 9000
 ```
 
+#### Specify dns to capture packets
+
+To capture DNS packets, specify the domain name:
+
+```
+./pretool_arm64 -d www.infvie.com
+```
+
+#### Nmap written entirely in go
+
+pretool extends nmap to implement an efficient port scanner, supporting the following scanning methods: UDP, TCP full connection, ICMP, FIN, ACK, SYN half-open, NULL, IP protocol layer, and feature-based scanning.
+
+```
+# pretool_amd64 -n <target_ip> <21-25,80> <tcp,udp> <threads> (default threads is 10000)
+./pretool_amd64 -n 192.168.200.129 21-25,80 tcp,udp 100
+```
+
 ## Options
 
 ```
@@ -66,6 +83,8 @@ Or, specify a custom port number (e.g., 9000):
 -p, --port   Specify the port number (default is 8000).
 -s, --ssl    Enable SSL/TLS for the server.
 -d, --domain Specify domain for tcpdump filter.
+-n, --nmap    Enable an efficient port scanner, [-n <target_ip> <21-25,80> <tcp,udp> <threads>].
+
 ```
 
 ## Other Options
