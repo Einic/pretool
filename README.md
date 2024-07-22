@@ -95,7 +95,7 @@ Extends go nmap to implement an efficient port scanner, supporting the following
 -p, --port   Specify the port number (default is 8000).
 -s, --ssl    Enable SSL/TLS for the server.
 -d, --domain Specify domain for tcpdump filter.
--n, --nmap    Enable an efficient port scanner, [-n <target_ip> <21-25,80> <tcp,udp> <threads>].
+-n, --nmap   Enable an efficient port scanner, [-n <target_ip> <21-25,80> <tcp,udp> <threads>].
 
 ```
 
