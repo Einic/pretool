@@ -1,6 +1,7 @@
 # pretool
 Supports service listen in both host and bridge network modes, and includes an automatic network capture utility specifically designed for DNS traffic ,and extends go nmap to implement an efficient port scanner, supporting the following automatic scanning methods: UDP, TCP full connection, ICMP, FIN, ACK, SYN half-open, NULL, IP protocol layer, and feature-based scanning.
 
+## Features
 * [x] micro container network listen
 * [x] micro dns packet capture
 * [x] micro nmap port detection
