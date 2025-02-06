@@ -79,7 +79,7 @@ To capture DNS packets, specify the domain name:
 
 #### Nmap written entirely in go
 
-Extends go nmap to implement an efficient port scanner, supporting the following automatic scanning methods: UDP, TCP full connection, ICMP, FIN, ACK, SYN half-open, XMAS ,NULL, IP protocol layer, and feature-based scanning.
+Extends go nmap to implement an efficient port scanner, supporting the following automatic scanning methods: UDP, TCP full connection, ICMP, FIN, ACK, SYN half-open, XMAS, NULL, IP protocol layer and feature code scanning.
 
 ```
 # pretool_amd64 -n <target ip/domain> <21-25,80> <tcp,udp> <threads> (default threads is 10000)
